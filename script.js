@@ -55,7 +55,7 @@ function start()
 	question = flashcards[f] ;
 	//puts "correct" answer into first element of array"//
 	answercards[0] = question.answer;
- 	document.getElementById("questionpic").innerHTML = "<img src='"+ question.image + "'style= 'width:100%; height:100%'>";
+ 	document.getElementById("questionpic").innerHTML = "<img src='"+ question.image + "'style= 'width:100%; height:35vh'>";
  	//puts random answers into other elements of array//
 	for (x = 1; x < howmanyanswers; x++) { 
 		e = (Math.ceil(Math.random() * (answers.length-1)));
@@ -136,7 +136,7 @@ function newflashcard(correct1, incorrect1, image, answer, count)
 
 		question = flashcards[f] ;
 		answercards[0] = question.answer;
- 		document.getElementById("questionpic").innerHTML = "<img src='"+ question.image + "'style= 'width:100%; height:100%'>";
+ 		document.getElementById("questionpic").innerHTML = "<img src='"+ question.image + "'style= 'width:100%; height:35vh'>";
 		for (x = 1; x < howmanyanswers; x++) { 
 			e = (Math.ceil(Math.random() * (answers.length-1)));
 			answercards[x] = answers[e];
